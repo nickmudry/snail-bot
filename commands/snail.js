@@ -53,7 +53,7 @@ class Snail extends BaseCommand {
     	const client = messageObject.client; 
 
         var stringResponseText = snailGifs[Math.floor(Math.random() * snailGifs.length)];
-        var delayLength = randomIntFromInterval(1000, 10000);
+        var delayLength = randomIntFromInterval(1000, 60000);
         var numOfSnails = delayLength / 1000;
         var snails = "";
 
