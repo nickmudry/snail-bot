@@ -1,0 +1,10 @@
+{
+	"name": "Snail Bot",
+	"version": "1.0.0",
+	"description": "It is a bot.",
+	"main": "snail.js",
+	"author": "Nick Mudry",
+	"dependencies": {
+		"discord.js": "^12.5.1"
+	}
+}
