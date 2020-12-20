@@ -69,11 +69,10 @@ class Snail extends BaseCommand {
         	messageObject.reply(snails);
         	messageObject.channel.send(stringResponseText); 
         	client.user.setActivity('for !snail', { type: `WATCHING`});
+        	messageObject.delete({ timeout: 1 });
         }, delayLength);
-
-        i = 0;
-
         
+        i = 0;
     }
 }
 
