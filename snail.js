@@ -18,7 +18,7 @@ client.on('ready', () => {
 	console.log (`${client.user.tag} logged in at ${client.readyAt}`)
     console.log(`\nLoaded the following commands:`);
     console.log(client.commands);
-    client.user.setActivity('!snail', { type: `PLAYING`});
+    client.user.setActivity('for !snail. 🐌', { type: `WATCHING`});
 });
 
 client.on('message', msg => {
@@ -27,14 +27,14 @@ client.on('message', msg => {
 
         var commandTrigger = `${msg.content.split(' ')[0]}`;
 
-        if (!client.commands.has(commandTrigger || commandTriggerWithText)) return;
+        if (!client.commands.has(commandTrigger)) return;
 
         try {
             client.commands.get(commandTrigger).execute(msg);
         } 
         catch (error) {
             console.error(error);
-            msg.send(`there was an error`);
+           
         }
     }
 );

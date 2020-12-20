@@ -1,4 +1,4 @@
 @ECHO OFF
 TITLE Savathun Bot Inspector
-nodemon --inspect savathun.js
+nodemon --inspect snail.js
 PAUSE
